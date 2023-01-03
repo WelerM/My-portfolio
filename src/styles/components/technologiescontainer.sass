@@ -1,0 +1,83 @@
+@use '../variables'
+@use '../mixins'
+
+.technologies-container
+    margin-bottom: 1rem
+
+    .technologies-grid
+        display: flex
+        flex-wrap: wrap
+        gap: 1.5rem
+        justify-content: center
+
+        .technology-card
+            @include mixins.center
+            gap: 1rem
+            padding: 1rem
+            border: 1px solid #333
+            width: 45%
+            border-radius: variables.$card-border-radius
+
+            @media screen and (max-width: 744px)
+                display: flex
+                justify-content: start
+
+        .svg-container
+
+            width: 70px
+            height: 70px
+
+        svg
+            height: 70px
+            width: 70px
+        h3
+            color: variables.$text-color
+            margin-bottom: 1rem
+
+        #html
+            svg
+                color: #E44D26
+        #css
+            svg
+                color: #1572b6
+        #js
+            svg
+                color: #f0db4f
+
+        #node
+            svg
+                color: #83cd29
+        #git
+            svg
+                color: #F05030
+
+        #react
+            svg
+                color: #61dafb
+        #sass
+            svg
+                color: #CF649A
+        #sql
+            svg
+                color: #E48E00
+        #bootstrap
+            svg
+                color: #6F0FE6
+
+        @media screen and (max-width: 1060px)
+            flex-wrap: none
+            flex-direction: column
+            align-items: center
+
+            .technology-card
+                width: 100%
+
+.projects-grid
+
+    @media screen and (max-width: 1060px)
+        flex-wrap: nowrap
+        flex-direction: column
+        align-content: center
+
+        .project-card
+            width: 100%
