@@ -35,7 +35,7 @@ const ProjectContainer = () => {
                     <div className="project-info">
                         <h3>Sites</h3>
                         <ul>
-                            <li><a href="https://github.com/WelerM/Site-em-React" target="_blank" className='project-card-link'>Meu portfólio (React, Vite, Sass)</a></li>
+                            <li><a href="https://github.com/WelerM/My-portfolio" target="_blank" className='project-card-link'>Meu portfólio (React, Vite, Sass)</a></li>
                             <li><a href="https://github.com/WelerM/Site-em-React" target="_blank" className='project-card-link'>Site em React</a></li>
                             <li><a href="https://github.com/WelerM/focus-2.0-php" target="_blank" className='project-card-link'>Site em PHP + Bootstrap (Para empresa de meu pai)</a></li>
                         </ul>
