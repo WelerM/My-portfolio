@@ -1,0 +1,37 @@
+@use '../variables'
+
+#portfolio
+    display: flex
+    flex-wrap: wrap
+    padding: 3rem
+    gap: 3rem
+
+    h1
+        width: 100%
+        font-size: 5rem
+        margin-bottom: 4rem
+        background: variables.$gradient
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+
+        @media screen and (max-width: 744px)
+            text-align: center
+
+        @media screen and (max-width: 622px)
+            font-size: calc(8vw + 20px )
+        @media screen and (max-width: 500px)
+            margin-bottom: 80px
+        @media screen and (max-width: 342px)
+            font-size: calc( 7vw + 10px )
+            margin-top: 30px
+
+    @media screen and (max-width: 500px)
+        display: block
+        margin: auto
+        padding: 1rem
+        
+    @media screen and (max-width: 342px)
+        padding: 5px
+    
+    strong
+           color: variables.$gradient-color

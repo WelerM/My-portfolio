@@ -1,0 +1,130 @@
+@use '../variables'
+@use '../mixins'
+
+#sideBar
+    background-color: variables.$bg-color
+    flex: 1 1 0
+    border-radius: variables.$container-border-radius
+    display: flex
+    align-items: center
+    flex-direction: column
+    text-align: center
+    position: relative
+    padding: 3rem 1rem
+
+    @media screen and (max-width: 500px)
+        margin: auto
+
+
+.img-profile
+    width: 250px
+    height: ''
+    border-radius: variables.$container-border-radius
+    position: absolute
+    top: -3rem
+
+    @media screen and (max-width: 744px)
+        width:280px
+ 
+    @media screen and (max-width: 500px)
+        width:220px
+        
+    @media screen and (max-width: 342px)
+        width: 180px
+        height: 180px
+.title-1
+    color: variables.$text-color-secondary
+    background: variables.$bg-color-secondary
+    border-radius: variables.$card-border-radius
+    margin-top: 12rem
+    padding: .8rem 1.2rem
+
+    @media screen and (max-width: 744px)
+        margin-top: 15rem
+     
+    @media screen and (max-width: 500px)
+        margin-top:10rem
+    @media screen and (max-width: 342px)
+        margin-top: 7rem
+   
+.degree-container
+    margin-bottom: 20px
+    margin-top: 1rem
+    border-radius: variables.$card-border-radius
+    background: variables.$bg-color-secondary
+    padding: 1rem
+    width: 100%
+
+    .collage
+        display: flex
+        align-items: center
+        gap: 12px
+        padding: 0.6rem 0.9rem
+        width: 100%
+        border-bottom: 1px solid #444
+
+        img
+            width: 30px
+            height: 30px
+            position: relative
+            top: 3px
+
+        .collage-texts
+            display: flex
+            align-items: flex-start
+            flex-direction: column
+            gap: 6px
+
+            h3
+                color: variables.$text-color-secondary
+                font-size: 0.8rem
+            p
+                color: variables.$text-color
+                text-align: start
+                line-height: 19px
+
+        @media screen and (max-width: 342px)
+            padding: 10px 0px
+            
+    @media screen and (max-width: 744px)
+        width: 80%
+    @media screen and (max-width: 500px)
+        width: 100%
+
+.fluent
+    display: flex
+    align-items: center
+    gap: 10px
+    padding: 0.6rem 0.9rem
+    width: 100%
+    border-bottom: 1px solid #444
+
+    img
+        width: 30px
+
+    .fluent-texts
+        display: flex
+        align-items: flex-start
+        flex-direction: column
+        gap: 6px
+
+        h3
+            color: variables.$text-color-secondary
+            font-size: 0.8rem
+        p
+            color: variables.$text-color
+            text-align: start
+        .ef-education
+            color: #57C1DE
+        
+    @media screen and (max-width: 342px)
+        padding: 10px 0px
+    
+.btn
+    @include mixins.btn
+    border: none
+    cursor: pointer
+
+.btn_curriculo
+    @include mixins.btn
+    
