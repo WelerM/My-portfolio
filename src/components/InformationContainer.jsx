@@ -7,22 +7,22 @@ const InformationContainer = () => {
             <div className="info-card">
                 <AiFillPhone id='phone-icon' />
                 <div>
-                    <h3>Telefone</h3>
-                    <p>(51)98026-8310</p>
+                    <h3 style={{marginBottom: '0.5rem'}}>Phone</h3>
+                    <p> +55 51 99450 4382</p>
                 </div>
             </div>
             <div className="info-card">
                 <AiOutlineMail id='email-icon' />
                 <div>
-                    <h3>Email</h3>
+                    <h3  style={{marginBottom: '0.5rem'}}>E-mail</h3>
                     <p>welerson194@gmail.com</p>
                 </div>
             </div>
             <div className="info-card">
                 <AiFillEnvironment id='pin-icon' />
                 <div>
-                    <h3>Localização</h3>
-                    <p>Viamão / RS</p>
+                    <h3  style={{marginBottom: '0.5rem'}}   >City</h3>
+                    <p>Viamão, Rio Grande do Sul - Brazil</p>
                 </div>
             </div>
         </section>
