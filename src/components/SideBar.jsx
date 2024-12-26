@@ -5,6 +5,7 @@ import InformationContainer from './InformationContainer';
 import { PiGraduationCap } from "react-icons/pi";
 import { LiaCertificateSolid } from "react-icons/lia";
 import PDF from '../assets/pdf/resume.pdf'
+import PDF_PT from '../assets/pdf/curriculo_weler_martins.pdf'
 
 const Sidebar = () => {
     return (
@@ -49,8 +50,11 @@ const Sidebar = () => {
             <InformationContainer />
             {/*       <a href="" className="btn" onClick={()=>downloadFile}>Download currículo</a> */}
 
-            <a href={PDF} download="Currículo - Weler S Martins" className='btn_resume' target='_blank'>
+            <a style={{marginBlock: '1rem'}} href={PDF} download="Resume - Weler S Martins" className='btn_resume' target='_blank'>
                 Download resume
+            </a>
+            <a href={PDF_PT} download="Currículo - Weler S Martins" className='btn_resume' target='_blank'>
+                Download currículo
             </a>
         </aside>
     )
